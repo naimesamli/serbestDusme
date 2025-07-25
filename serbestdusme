@@ -1,0 +1,11 @@
+import math
+G = 9.80665
+def SureHesapla(yukseklik):
+    return math.sqrt(2 * (yukseklik) / G)
+def HizHesapla(sure):
+    return G * (sure)
+yukseklik = input("Cismin serbest bırakıldığı yüksekliği giriniz: ")
+YereDusmeSuresi = SureHesapla(int(yukseklik))
+print("Cisim yere ", YereDusmeSuresi, " saniye sonra düşer.")
+YereCarpmaHizi = HizHesapla(YereDusmeSuresi)
+print("Cisim yere ", YereCarpmaHizi, " m/s hızla çarpar.")
